@@ -127,4 +127,7 @@ const checkWinner = () => {
 };
 
 newGamebtn.addEventListener("click", resetGame);
-resetBtn.addEventListener("click", EnableBox);
+resetBtn.addEventListener("click", () => {
+  EnableBox();
+  Draw.classList.add("hide");
+});
